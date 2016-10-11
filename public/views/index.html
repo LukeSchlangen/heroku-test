@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cats!</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css"/>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/client.js"></script>
+  </head>
+  <body>
+    <div class="text-center">
+      <h1>Cats!</h1>
+    </div>
+
+    <main class="container">
+      <div class="well">
+        <p class="lead">Cat's we know about:</p>
+        <ul id="cats"></ul>
+      </div>
+
+      <div class="well">
+        <p class="lead">Add a new cat:</p>
+
+        <p id="err" class="text-danger text-center hidden">Hmm something went wrong.</p>
+
+        <form class="form-horizontal" id="add-cat">
+          <div class="form-group">
+            <label class="col-xs-2 control-label">Name</label>
+            <div class="col-xs-8">
+              <input class="form-control" type="text" name="name"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-xs-2 control-label">Age</label>
+            <div class="col-xs-8">
+              <input class="form-control" type="number" name="age"/>
+            </div>
+          </div>
+          <button class="btn btn-default col-xs-offset-2">Add a cat!</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
